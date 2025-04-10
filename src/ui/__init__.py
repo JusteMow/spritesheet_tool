@@ -1,0 +1,1 @@
+"""Package contenant l'interface utilisateur de l'application.""" 

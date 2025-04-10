@@ -1,0 +1,1 @@
+"""Package contenant les différents panneaux de l'interface.""" 
