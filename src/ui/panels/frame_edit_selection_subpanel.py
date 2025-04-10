@@ -34,23 +34,23 @@ class FrameEditSelectionSubpanel:
     def _build_ui(self):
         """Construit l'interface utilisateur."""
         # Titre
-        ttk.Label(self.frame, text="Sélection", style="Dark.TLabel").pack(pady=(0, 5))
+        ttk.Label(self.frame, text="Frame Selection", style="Dark.TLabel").pack(pady=(0, 5))
         
         # Boutons de sélection globale
         buttons_frame = ttk.Frame(self.frame, style="Dark.TFrame")
         buttons_frame.pack(fill=tk.X)
         
-        ttk.Button(buttons_frame, text="Tout", command=self.select_all, style="Dark.TButton").pack(side=tk.LEFT, padx=2)
-        ttk.Button(buttons_frame, text="Rien", command=self.select_none, style="Dark.TButton").pack(side=tk.LEFT, padx=2)
-        ttk.Button(buttons_frame, text="Inverser", command=self.select_invert, style="Dark.TButton").pack(side=tk.LEFT, padx=2)
+        ttk.Button(buttons_frame, text="All", command=self.select_all, style="Dark.TButton").pack(side=tk.LEFT, padx=2)
+        ttk.Button(buttons_frame, text="None", command=self.select_none, style="Dark.TButton").pack(side=tk.LEFT, padx=2)
+        ttk.Button(buttons_frame, text="Invert", command=self.select_invert, style="Dark.TButton").pack(side=tk.LEFT, padx=2)
         
         # Sélection 1 sur X
         skip_frame = ttk.Frame(self.frame, style="Dark.TFrame")
         skip_frame.pack(fill=tk.X, pady=5)
         
-        ttk.Label(skip_frame, text="1 sur", style="Dark.TLabel").pack(side=tk.LEFT)
+        ttk.Label(skip_frame, text="1 over", style="Dark.TLabel").pack(side=tk.LEFT)
         ttk.Entry(skip_frame, textvariable=self.skip_var, width=5, style="Dark.TEntry").pack(side=tk.LEFT, padx=2)
-        ttk.Button(skip_frame, text="Sélectionner", command=self._select_every_x, style="Dark.TButton").pack(side=tk.LEFT, padx=2)
+        ttk.Button(skip_frame, text="Sélect", command=self._select_every_x, style="Dark.TButton").pack(side=tk.LEFT, padx=2)
         
         # Reset offsets
         ttk.Button(self.frame, text="Reset Offsets", command=self.reset_offsets, style="Dark.TButton").pack(fill=tk.X, pady=5)

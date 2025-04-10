@@ -32,3 +32,22 @@ old/
 
 # Configs perso
 .env
+# PyInstaller
+build/
+dist/
+*.spec
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# PyInstaller
+build/
+dist/
+*.spec

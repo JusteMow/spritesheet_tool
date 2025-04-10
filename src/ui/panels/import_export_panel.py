@@ -42,25 +42,25 @@ class ImportExportPanel:
         spritesheet_frame = ttk.Frame(self.frame, style="Dark.TFrame")
         spritesheet_frame.pack(fill=tk.X, pady=2)
         
-        ttk.Button(spritesheet_frame, text="Importer Sprite Sheet", command=self.import_spritesheet, style="Dark.TButton").pack(fill=tk.X)
+        ttk.Button(spritesheet_frame, text="Import Sprite Sheet", command=self.import_spritesheet, style="Dark.TButton").pack(fill=tk.X)
         
         # Rows/Columns
         rowcol_frame = ttk.Frame(self.frame, style="Dark.TFrame")
         rowcol_frame.pack(fill=tk.X, pady=2)
         
-        ttk.Label(rowcol_frame, text="Lignes", style="Dark.TLabel").pack(side=tk.LEFT)
+        ttk.Label(rowcol_frame, text="Rows", style="Dark.TLabel").pack(side=tk.LEFT)
         self.import_rows_var = tk.IntVar(value=States.import_rows_var)
         self.import_rows_var.trace_add("write", self._on_rows_cols_changed)
         ttk.Entry(rowcol_frame, textvariable=self.import_rows_var, width=5, style="Dark.TEntry").pack(side=tk.LEFT, padx=2)
         
-        ttk.Label(rowcol_frame, text="Colonnes", style="Dark.TLabel").pack(side=tk.LEFT)
+        ttk.Label(rowcol_frame, text="Columns", style="Dark.TLabel").pack(side=tk.LEFT)
         self.import_columns_var = tk.IntVar(value=States.import_columns_var)
         self.import_columns_var.trace_add("write", self._on_rows_cols_changed)
         ttk.Entry(rowcol_frame, textvariable=self.import_columns_var, width=5, style="Dark.TEntry").pack(side=tk.LEFT, padx=2)
         
         # Autres imports
-        ttk.Button(self.frame, text="Importer Dossier", command=self.import_folder, style="Dark.TButton").pack(fill=tk.X, pady=2)
-        ttk.Button(self.frame, text="Importer Vidéo", command=self.import_video, style="Dark.TButton").pack(fill=tk.X, pady=2)
+        ttk.Button(self.frame, text="Import Folder", command=self.import_folder, style="Dark.TButton").pack(fill=tk.X, pady=2)
+        ttk.Button(self.frame, text="Import Video", command=self.import_video, style="Dark.TButton").pack(fill=tk.X, pady=2)
     
     def _build_export_section(self):
         """Construit la section export."""
@@ -71,11 +71,11 @@ class ImportExportPanel:
         spritesheet_frame = ttk.Frame(self.frame, style="Dark.TFrame")
         spritesheet_frame.pack(fill=tk.X, pady=2)
         
-        ttk.Button(spritesheet_frame, text="Exporter Sprite Sheet", command=self.export_spritesheet, style="Dark.TButton").pack(fill=tk.X)
+        ttk.Button(spritesheet_frame, text="Export Sprite Sheet", command=self.export_spritesheet, style="Dark.TButton").pack(fill=tk.X)
         
         # Autres exports
-        ttk.Button(self.frame, text="Exporter Frames", command=self.export_frames, style="Dark.TButton").pack(fill=tk.X, pady=2)
-        ttk.Button(self.frame, text="Exporter GIF", command=self.export_gif, style="Dark.TButton").pack(fill=tk.X, pady=2)
+        ttk.Button(self.frame, text="Export Folder", command=self.export_frames, style="Dark.TButton").pack(fill=tk.X, pady=2)
+        ttk.Button(self.frame, text="Export GIF", command=self.export_gif, style="Dark.TButton").pack(fill=tk.X, pady=2)
     
     def import_folder(self):
         """Importe un dossier d'images."""

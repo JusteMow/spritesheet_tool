@@ -17,17 +17,5 @@ And export to:
 - separate images in a folder
 - animated GIFs
 
-=> If you find it useful, 
-=> have an idea for a new feature, 
-=> or discover a bug — 
-=> feel free to leave me a message! 😉
-
-## 🚀 How to run : 
-- Windows non Python users : dist\spritesheettool.exe
-- others : run_venv.bat
-
-## 🔧 Docs and Console 
-- are in French 
-
-
+If you find it useful, have an idea for a new feature, or discover a bug — feel free to leave me a message! 😉
 
