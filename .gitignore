@@ -32,6 +32,13 @@ old/
 
 # Configs perso
 .env
+run.bat
+
+
+# PyInstaller
+build/
+dist/
+*.spec
 # PyInstaller
 build/
 dist/
