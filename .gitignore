@@ -36,18 +36,3 @@ old/
 build/
 dist/
 *.spec
-
-# PyInstaller
-build/
-dist/
-*.spec
-
-# PyInstaller
-build/
-dist/
-*.spec
-
-# PyInstaller
-build/
-dist/
-*.spec
